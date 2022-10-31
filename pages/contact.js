@@ -3,6 +3,15 @@ import { FaFacebookSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { MdMail } from "react-icons/md";
 import { useInView } from "react-intersection-observer";
 import { ScrollContext } from "../utils/scroll-observer";
+import Link from 'next/link'
+
+const Mailto = ({ email, subject, body, children }) => {
+  return (
+    <a href={`mailto:${email}?subject=${subject || ""}&body=${body || ""}`}>
+      {children}
+    </a>
+  )
+}
 
 const Contact = () => {
   const { ref: contactContentRef, inView: contactContentInView } = useInView();
@@ -15,7 +24,7 @@ const Contact = () => {
     progress = Math.min(
       1,
       (scrollY - window.innerHeight * 3) /
-        contactSectionRef.current.clientHeight
+      contactSectionRef.current.clientHeight
     );
   }
 
@@ -29,9 +38,8 @@ const Contact = () => {
         {/* Small Titile */}
         <div
           ref={contactTitleRef}
-          className={`md:hidden font-alice text-white text-[3rem] pb-10 ${
-            contactTitleInView ? "animate-textAnim" : "opacity-0"
-          }`}
+          className={`md:hidden font-alice text-white text-[3rem] pb-10 ${contactTitleInView ? "animate-textAnim" : "opacity-0"
+            }`}
         >
           Contact
         </div>
@@ -47,26 +55,33 @@ const Contact = () => {
         </div>
         <div
           ref={contactContentRef}
-          className={`flex flex-col gap-6 md:flex-row h-full w-full  md:justify-center ${
-            contactContentInView ? "animate-textAnim" : "opacity-0"
-          }`}
+          className={`flex flex-col gap-6 md:flex-row h-full w-full  md:justify-center ${contactContentInView ? "animate-textAnim" : "opacity-0"
+            }`}
         >
-          <div className="flex flex-row items-center  gap-5 text-white font-inter  md:p-3 transition-all md:hover:scale-105 hover:text-accent">
-            <MdMail className="h-[2rem] w-auto md:h-auto md:w-[10rem] lg:w-[12.5rem] " />
-            <span className="md:hidden text-2xl ">e-mail</span>
-          </div>
-          <div className="flex flex-row h-auto items-center gap-5 text-white font-inter  md:p-3 transition-all md:hover:scale-105 hover:text-accent">
-            <FaLinkedin className="h-[2rem] w-auto md:h-auto md:w-[8rem] lg:w-[10rem] " />
-            <span className="md:hidden text-2xl ">LinkedIn</span>
-          </div>
-          <div className="flex flex-row h-auto items-center gap-5 text-white font-inter  md:p-3 transition-all md:hover:scale-105 hover:text-accent">
-            <FaFacebookSquare className="h-[2rem] w-auto md:h-auto md:w-[8rem] lg:w-[10rem] " />
-            <span className="md:hidden text-2xl ">Facebook</span>
-          </div>
-          <div className="flex flex-row h-auto items-center gap-5 text-white font-inter  md:p-3 transition-all md:hover:scale-105 hover:text-accent">
-            <FaGithubSquare className="h-[2rem] w-auto md:h-auto md:w-[8rem] lg:w-[10rem] " />
-            <span className="md:hidden text-2xl ">GitHub</span>
-          </div>
+          <Mailto email={"lukas.novorolnik@gmail.com"} subject={"Portfolio response"}>
+            <div className="flex flex-row items-center  gap-5 text-white font-inter  cursor-pointer md:p-3 transition-all md:hover:scale-105 hover:text-accent">
+              <MdMail className="h-[2rem] w-auto md:h-auto md:w-[10rem] lg:w-[12.5rem] " />
+              <span className="md:hidden text-2xl ">e-mail</span>
+            </div>
+          </Mailto>
+          <Link href="https://www.linkedin.com/in/lukas-novorolnik-4575121aa/">
+            <div className="flex flex-row h-auto items-center gap-5 text-white font-inter  cursor-pointer md:p-3 transition-all md:hover:scale-105 hover:text-accent">
+              <FaLinkedin className="h-[2rem] w-auto md:h-auto md:w-[8rem] lg:w-[10rem] " />
+              <span className="md:hidden text-2xl ">LinkedIn</span>
+            </div>
+          </Link>
+          <Link href='https://www.facebook.com/lukas.novorolnik'>
+            <div className="flex flex-row h-auto items-center gap-5 text-white font-inter  cursor-pointer md:p-3 transition-all md:hover:scale-105 hover:text-accent">
+              <FaFacebookSquare className="h-[2rem] w-auto md:h-auto md:w-[8rem] lg:w-[10rem] " />
+              <span className="md:hidden text-2xl ">Facebook</span>
+            </div>
+          </Link>
+          <Link href='https://github.com/lukasNwr'>
+            <div className="flex flex-row h-auto items-center gap-5 text-white font-inter cursor-pointer md:p-3 transition-all md:hover:scale-105 hover:text-accent">
+              <FaGithubSquare className="h-[2rem] w-auto md:h-auto md:w-[8rem] lg:w-[10rem] " />
+              <span className="md:hidden text-2xl ">GitHub</span>
+            </div>
+          </Link>
         </div>
       </div>
     </section>

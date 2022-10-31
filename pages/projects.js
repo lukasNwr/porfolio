@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import GitButton from "../components/GitButton";
+import LiveButton from "../components/LiveButton";
 
 import {
   ProjectContainer,
@@ -34,7 +35,10 @@ const Projects = () => (
                   Simple web editor, allowing you to create, load and save
                   markdown files, with live preview
                 </div>
-                <GitButton />
+                <div className="flex items-center gap-4">
+                  <GitButton repoLink="https://github.com/lukasNwr/markdown-editor" />
+                  <LiveButton liveLink="https://markdown-editor-lukasnwr.vercel.app"/>
+                </div>
               </ProjectLeft>
               <ProjectRight>
                 <Image
@@ -64,6 +68,7 @@ const Projects = () => (
                   access to the command room and kill the boss and his servants
                   to save the station!
                 </div>
+                <GitButton repoLink={"/"} />
               </ProjectLeft>
               <ProjectRight>
                 <Image
