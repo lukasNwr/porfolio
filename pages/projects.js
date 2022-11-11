@@ -37,12 +37,12 @@ const Projects = () => (
                 </div>
                 <div className="flex items-center gap-4">
                   <GitButton repoLink="https://github.com/lukasNwr/markdown-editor" />
-                  <LiveButton liveLink="https://markdown-editor-lukasnwr.vercel.app"/>
+                  <LiveButton liveLink="https://markdown-editor-lukasnwr.vercel.app" />
                 </div>
               </ProjectLeft>
               <ProjectRight>
                 <Image
-                  src="/emdit_main.png"
+                  src="/emdit_main_square.png"
                   alt="emdit-project-image"
                   layout="responsive"
                   width={100}
@@ -68,11 +68,13 @@ const Projects = () => (
                   access to the command room and kill the boss and his servants
                   to save the station!
                 </div>
-                <GitButton repoLink={"https://github.com/lukasNwr/Project_Ellen"} />
+                <GitButton
+                  repoLink={"https://github.com/lukasNwr/Project_Ellen"}
+                />
               </ProjectLeft>
               <ProjectRight>
                 <Image
-                  src="/project_ellen.png"
+                  src="/project_ellen_square.png"
                   alt="projectEllen-main-image"
                   layout="responsive"
                   width={100}
