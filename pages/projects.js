@@ -68,7 +68,7 @@ const Projects = () => (
                   access to the command room and kill the boss and his servants
                   to save the station!
                 </div>
-                <GitButton repoLink={"/"} />
+                <GitButton repoLink={"https://github.com/lukasNwr/Project_Ellen"} />
               </ProjectLeft>
               <ProjectRight>
                 <Image

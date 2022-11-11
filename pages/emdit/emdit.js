@@ -55,7 +55,7 @@ const Emdit = () => {
             }`}
           >
             <Image
-              src="/emdit-welcome-big.png"
+              src="/emdit_welcome.png"
               alt="emdit-welcome-image"
               layout="responsive"
               width={160}
@@ -69,7 +69,7 @@ const Emdit = () => {
             }`}
           >
             <Image
-              src="/emdit-example-big.png"
+              src="/emdit_main.png"
               alt="emdit-welcome-image"
               layout="responsive"
               width={160}

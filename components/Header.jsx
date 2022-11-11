@@ -13,7 +13,7 @@ const Header = () => {
       <aside
         className={`fixed w-screen h-screen bg-black transition-all ease-in-out duration-[750ms] ${
           isMenuOpen ? "right-0 " : "right-[-100vw]"
-        } z-30`}
+        } z-50`}
       >
         <div className="flex justify-end w-full h-14 p-4 ">
           <div className="md:hidden">
