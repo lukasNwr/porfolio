@@ -6,7 +6,7 @@ const Title = ({ projectName, projectDescription }) => {
   const { ref: divider, inView: dividerInView } = useInView();
 
   return (
-    <div className="flex justify-center min-h-screen w-screen pt-10 md:pt-0">
+    <div className="flex flex-1 justify-center items-center lg:h-screen min-h-screen w-screen pt-10 md:pt-0">
       <div className="flex flex-col lg:flex-row h-full w-full lg:w-[70%] max-w-[120rem] justify-center lg:justify-around items-start lg:items-center px-8 lg:px-0">
         <h1
           ref={title}
