@@ -20,7 +20,7 @@ const About = () => {
   }
 
   return (
-    <section id="about" ref={aboutSectionRef} className="h-screen w-screen">
+    <section id="about" ref={aboutSectionRef} className="min-h-screen w-screen">
       <div className="flex flex-col px-10 items-start lg:items-center h-full justify-end  py-10 md:py-10 pt-10">
         <div className="flex flex-col lg:items-center relative md:px-20 lg:px-0">
           {/* Small screen title */}

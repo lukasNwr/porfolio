@@ -4,8 +4,8 @@ const Hero = () => {
   const { ref: heroTextRef, inView: heroTextInView } = useInView();
 
   return (
-    <div className="flex flex-1 justify-center w-full">
-      <section className="flex flex-col gap-5 h-screen w-screen md:w-[60%] justify-center items-start px-10  md:px-8">
+    <div className="flex justify-center h-screen w-screen">
+      <section className="flex flex-col gap-5 h-full w-full md:w-[60%] justify-center items-start px-10  md:px-8">
         <div ref={heroTextRef}>
           <span
             id="hero-name"
