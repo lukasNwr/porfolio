@@ -52,15 +52,15 @@ const About = () => {
 
         `}
           >
-            Hi there! I’am Lukas. I am passionate and slightly introverted
+            Hi there! I am Lukas. I am passionate and slightly introverted
             person, who loves building things. When I was little, I loved
             building things with lego (and to be honest I still kinda do),
             because it allowed me to express my imagination and transform it
             into objects in real world. Later music took my full focus and I
             wanted to be a rock star, so I learned to play various musical
-            instruments and even though, music is still deeply in my heart,
-            after I saw couple of episodes of Mr. Robot, I realised, that I want
-            to learn to code and express myself in that way.
+            instruments. These days, even though music is still deeply in my
+            heart, after I saw couple of episodes of Mr. Robot, I realised that
+            I want to learn to code and express myself in that way.
             <br />
             <br />I obtained my Bachelor’s degree in computer science and
             recently started my Master’s degree studies at the University of

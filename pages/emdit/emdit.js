@@ -43,8 +43,8 @@ const Emdit = () => {
             functionality to the UI (at least to some extent). The idea was to
             create very simple but functional markdown editor, that would allow
             users to open markdown files from their local drive and edit them in
-            the editor. The users can also create markdown files directly in the
-            editor and then save them to their computer.
+            the editor. The users can also create markdown files directly in th
+            e editor and then save them to their computer.
           </div>
         </Goal>
         <Images>
