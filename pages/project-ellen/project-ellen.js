@@ -20,6 +20,7 @@ const ProjectEllen = () => {
         autoPlay
         muted
         loop
+        playsInline
         id="background video dark"
       >
         <source src="/BG_video_dark.mp4" type="video/mp4" />
@@ -49,9 +50,8 @@ const ProjectEllen = () => {
         <Images>
           <div
             ref={mainImg}
-            className={`w-full h-full lg:h-[40vw] lg:w-[40vw] max-w-[40rem] lg:absolute lg:top-[5em] lg:left-[15vw] transition-all duration-[1100ms] ease-out ${
-              mainImgInView ? "scale-100 opacity-100" : " scale-90 opacity-0"
-            }`}
+            className={`w-full h-full lg:h-[40vw] lg:w-[40vw] max-w-[40rem] lg:absolute lg:top-[5em] lg:left-[15vw] transition-all duration-[1100ms] ease-out ${mainImgInView ? "scale-100 opacity-100" : " scale-90 opacity-0"
+              }`}
           >
             <Image
               src="/project-ellen-main-big.png"
@@ -63,9 +63,8 @@ const ProjectEllen = () => {
           </div>
           <div
             ref={tileEditImg}
-            className={`w-full h-full lg:w-[40vw] lg:h-[40vw] max-w-[40rem] lg:absolute lg:top-[31em] lg:right-[15vw] transition-all duration-[1100ms] ease-out ${
-              tileEditImgInView ? "opacity-100 scale-100" : "opacity-0 scale-90"
-            }`}
+            className={`w-full h-full lg:w-[40vw] lg:h-[40vw] max-w-[40rem] lg:absolute lg:top-[31em] lg:right-[15vw] transition-all duration-[1100ms] ease-out ${tileEditImgInView ? "opacity-100 scale-100" : "opacity-0 scale-90"
+              }`}
           >
             <Image
               src="/project-ellen-tileEdit-big.png"

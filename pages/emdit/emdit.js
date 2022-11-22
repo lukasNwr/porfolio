@@ -20,6 +20,7 @@ const Emdit = () => {
         autoPlay
         muted
         loop
+        playInline
         id="background video dark"
       >
         <source src="/BG_video_dark.mp4" type="video/mp4" />
@@ -50,9 +51,8 @@ const Emdit = () => {
         <Images>
           <div
             ref={welcomeImg}
-            className={`w-full h-full lg:h-[40vw] lg:w-[40vw] max-w-[40rem] lg:absolute lg:top-[5em] lg:left-[15vw] transition-all duration-[1100ms] ease-out ${
-              welcomeImgInView ? "scale-100 opacity-100" : " scale-90 opacity-0"
-            }`}
+            className={`w-full h-full lg:h-[40vw] lg:w-[40vw] max-w-[40rem] lg:absolute lg:top-[5em] lg:left-[15vw] transition-all duration-[1100ms] ease-out ${welcomeImgInView ? "scale-100 opacity-100" : " scale-90 opacity-0"
+              }`}
           >
             <Image
               src="/emdit_welcome_big.png"
@@ -64,9 +64,8 @@ const Emdit = () => {
           </div>
           <div
             ref={mainImg}
-            className={`w-full h-full lg:w-[40vw] lg:h-[40vw] max-w-[40rem] lg:absolute lg:top-[31em] lg:right-[15vw] transition-all duration-[1100ms] ease-out ${
-              mainImgInView ? "opacity-100 scale-100" : "opacity-0 scale-90"
-            }`}
+            className={`w-full h-full lg:w-[40vw] lg:h-[40vw] max-w-[40rem] lg:absolute lg:top-[31em] lg:right-[15vw] transition-all duration-[1100ms] ease-out ${mainImgInView ? "opacity-100 scale-100" : "opacity-0 scale-90"
+              }`}
           >
             <Image
               src="/emdit_main_big.png"
