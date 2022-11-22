@@ -20,13 +20,15 @@ export default function Home() {
       <main>
         <div className="flex flex-col gap-20">
           <video
-            className="fixed left-0 top-0 h-screen w-full object-cover -z-10"
             autoPlay
-            muted
             loop
+            muted
+            playsInline
+            className="fixed left-0 top-0 h-screen w-full object-cover -z-10"
             id="background video dark"
           >
             <source src="BG_video_dark.mp4" type="video/mp4" />
+            <source src="BG_video_dark.webm" type="video/webm" />
           </video>
 
           <Header />

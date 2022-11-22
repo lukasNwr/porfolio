@@ -20,17 +20,20 @@ const About = () => {
   }
 
   return (
-    <section id="about" ref={aboutSectionRef} className="min-h-screen w-screen">
+    <section
+      id="about"
+      ref={aboutSectionRef}
+      className="min-h-screen w-screen flex items-center"
+    >
       <div className="flex flex-col px-10 items-start lg:items-center h-full justify-end  py-10 md:py-10 pt-10">
         <div className="flex flex-col lg:items-center relative md:px-20 lg:px-0">
           {/* Small screen title */}
           <span
             ref={titleRef}
-            className={`text-white text-[3rem] font-alice py-5 ${
-              titleIsVisible
+            className={`text-white text-[3rem] font-alice py-5 ${titleIsVisible
                 ? "animate-textAnim  lg:hidden"
                 : "lg:hidden opacity-0"
-            }`}
+              }`}
           >
             About me
           </span>
@@ -46,9 +49,8 @@ const About = () => {
           </span>
           <p
             ref={contentRef}
-            className={`text-white text-[1.1rem] font-inter pb-10 lg:w-[60%] lg:px-0 md:z-20 ${
-              contentIsVisible ? "animate-textAnim" : "opacity-0"
-            }
+            className={`text-white text-[1.1rem] font-inter pb-10 lg:w-[60%] lg:px-0 md:z-20 ${contentIsVisible ? "animate-textAnim" : "opacity-0"
+              }
 
         `}
           >
